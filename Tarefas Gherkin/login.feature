@@ -1,25 +1,17 @@
             # language: pt
-            Funcionalidade: Configuração de Produto na EBAC-SHOP
+            Funcionalidade: Login na plataforma EBAC-SHOP
             Como cliente da EBAC-SHOP
-            Quero configurar meu produto de acordo com meu tamanho e gosto
-            E escolher a quantidade
-            Para depois inserir no carrinho
+            Quero fazer o login (autenticação) na plataforma
+            Para visualizar meus pedidos
 
             Contexto:
-            Dado que estou na página de configuração do produto
+            Dado que estou na página de login da EBAC-SHOP
 
-            Esquema do Cenário: Configuração do produto com seleção de atributos e quantidades
-            Quando eu seleciono <cor>
-            E eu seleciono <tamanho>
-            E eu escolho <quantidade> produto(s)
+            Esquema do Cenário: Inserção de dados para login
+            Quando eu inserir "<usuario>" e <senha>
             Então <resultado> deve acontecer
 
             Exemplos:
-            | cor      | tamanho | quantidade | resultado                                                    |
-            | Azul     | M       | 5          | o botão "adicionar ao carrinho" é habilitado                 |
-            | Vermelho | G       | 11         | uma mensagem de erro é exibida informando o limite de compra |
-
-Cenário: Resetar configurações do produto
-Dado que selecionei atributos e quantidade de um produto
-Quando eu clico no botão "limpar"
-Então todas as minhas seleções devem ser resetadas para o estado original
+            | usuario        | senha        | resultado                                                            |
+            | usuario_valido | senha_valida | devo ser redirecionado para a tela de checkout                       |
+            | usuario_inv    | senha_inv    | uma mensagem de alerta "Usuário ou senha inválidos" deve ser exibida |
