@@ -10,9 +10,7 @@
             Dado que estou na página de configuração do produto
 
             Esquema do Cenário: Configuração do produto com seleção de atributos e quantidades
-            Quando eu seleciono <cor>
-            E eu seleciono <tamanho>
-            E eu escolho <quantidade> produto(s)
+            Quando eu seleciono <cor>, <tamanho> e <quantidade> produto(s)
             Então <resultado> deve acontecer
 
             Exemplos:
