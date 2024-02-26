@@ -8,7 +8,7 @@
             Dado que estou na página de login da EBAC-SHOP
 
             Esquema do Cenário: Inserção de dados para login
-            Quando eu inserir "<usuario>" e <senha>
+            Quando eu inserir <usuario> e <senha>
             Então <resultado> deve acontecer
 
             Exemplos:
