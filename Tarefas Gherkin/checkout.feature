@@ -6,8 +6,7 @@
 
             Cenário: Cadastro com todos os dados obrigatórios
             Dado que estou na página de cadastro da EBAC-SHOP
-            Quando eu preencho todos os campos obrigatórios
-            E submeto o formulário de cadastro
+            Quando eu preencho todos os campos obrigatórios e submeto o formulário de cadastro
             Então meu cadastro deve ser concluído com sucesso
 
             Esquema do Cenário: Cadastro com dados inválidos ou faltantes
@@ -19,5 +18,5 @@
             Exemplos:
             | email       | nome | mensagem                         |
             | invalido@   | Ana  | O campo e-mail é inválido        |
-            | ana@example |      | O campo nome é obrigatório       |
-            |             | Ana  | Todos os campos são obrigatórios |
+            | ana@example |  *   | O campo nome é obrigatório       |
+            |     *       | Ana  | Todos os campos são obrigatórios |
